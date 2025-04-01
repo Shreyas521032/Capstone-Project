@@ -9,6 +9,13 @@ from sklearn.metrics import r2_score, mean_squared_error, accuracy_score, classi
 import plotly.express as px
 import plotly.graph_objects as go
 
+# Set page configuration
+st.set_page_config(
+    page_title="Healthcare Data Analytics Platform",
+    page_icon="🏥",
+    layout="wide"
+)
+
 st.markdown("""
 <style>
     .main-header {
