@@ -61,7 +61,7 @@ st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", u
 def load_data():
     try:
         # Option 1: Load from Excel
-        return pd.read_excel("cancer_website_survey_data.xlsx")  # Update with your actual filename
+        return pd.read_excel("Project/cancer_website_survey_data.xlsx")  # Update with your actual filename
         
         # Option 2: Or load from CSV
         # return pd.read_csv("Project/data/healthcare_data.csv")
