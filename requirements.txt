@@ -6,3 +6,4 @@ seaborn
 scikit-learn
 plotly
 openpyxl
+statsmodels>=0.14.0
