@@ -47,29 +47,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Set page configuration
-st.set_page_config(
-    page_title="Healthcare Data Analytics Platform",
-    page_icon="🏥",
-    layout="wide"
-)
-    .card {
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 8px rgba(67, 97, 238, 0.1);
-        border: 1px solid #e9ecef;
-    }
-    .metric-card {
-        background-color: #edf2fb;
-        border-radius: 8px;
-        padding: 1rem;
-        text-align: center;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-</style>
-""", unsafe_allow_html=True)
-
 # Application title
 st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", unsafe_allow_html=True)
 
