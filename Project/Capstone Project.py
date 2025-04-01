@@ -20,39 +20,36 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 2.5rem;
-        color: #005f73;
+        color: #2b2d42;
         text-align: center;
         margin-bottom: 1.5rem;
-        font-weight: 600;
+        letter-spacing: 0.5px;
     }
     .section-header {
         font-size: 1.8rem;
-        color: #0a9396;
+        color: #4361ee;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #94d2bd;
-        padding-bottom: 0.3rem;
     }
     .subsection-header {
         font-size: 1.4rem;
-        color: #ee9b00;
+        color: #4cc9f0;
         margin-top: 0.8rem;
         margin-bottom: 0.8rem;
     }
     .card {
-        background-color: #ffffff;
+        background-color: #f8f9fa;
         border-radius: 10px;
         padding: 1.5rem;
-        box-shadow: 0 4px 6px rgba(0, 119, 182, 0.1);
-        border-left: 4px solid #0096c7;
+        box-shadow: 0 2px 8px rgba(67, 97, 238, 0.1);
+        border: 1px solid #e9ecef;
     }
     .metric-card {
-        background-color: #e6f7ff;
+        background-color: #edf2fb;
         border-radius: 8px;
         padding: 1rem;
         text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 180, 216, 0.1);
-        border-top: 3px solid #48cae4;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     }
 </style>
 """, unsafe_allow_html=True)
