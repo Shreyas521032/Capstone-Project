@@ -63,9 +63,6 @@ def load_data():
         # Option 1: Load from Excel
         return pd.read_excel("Project/cancer_website_survey_data.xlsx")  # Update with your actual filename
         
-        # Option 2: Or load from CSV
-        # return pd.read_csv("Project/data/healthcare_data.csv")
-        
     except Exception as e:
         st.error(f"Error loading dataset: {str(e)}")
         st.stop()  # This will halt the app if data fails to load 
