@@ -20,23 +20,41 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 2.5rem;
-        color: #2b2d42;
+        color: #1a535c;
         text-align: center;
         margin-bottom: 1.5rem;
-        letter-spacing: 0.5px;
+        font-family: 'Arial', sans-serif;
     }
     .section-header {
         font-size: 1.8rem;
-        color: #4361ee;
+        color: #4ecdc4;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .subsection-header {
         font-size: 1.4rem;
-        color: #4cc9f0;
+        color: #ff6b6b;
         margin-top: 0.8rem;
         margin-bottom: 0.8rem;
     }
+    .card {
+        background-color: #f7fff7;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(26, 83, 92, 0.1);
+    }
+    .metric-card {
+        background-color: #ffe66d;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(255, 107, 107, 0.1);
+        color: #1a535c;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+}
     .card {
         background-color: #f8f9fa;
         border-radius: 10px;
