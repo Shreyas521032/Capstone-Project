@@ -16,7 +16,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# Define CSS for styling
 st.markdown("""
 <style>
     .main-header {
