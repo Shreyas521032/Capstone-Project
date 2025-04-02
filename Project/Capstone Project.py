@@ -61,7 +61,7 @@ st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", u
 @st.cache_data
 def load_data():
     try:
-        df1 = pd.read_excel("Datasets/cancer_website_survey_dataset.xlsx")  
+        df1 = pd.read_excel("Datasets/cancer_website_survey_data.xlsx")  
         df2 = pd.read_excel("Datasets/website_survey_feedback_responses.xlsx")
         return pd.concat([df1, df2], ignore_index=True)        
         # return pd.read_excel("Project/cancer_website_survey_dataset.xlsx")          
