@@ -86,8 +86,16 @@ We leveraged **Supervised Learning** techniques for predictive modeling:
 - **📡 Real-Time API** → Integrate **FastAPI** to process **real-time patient feedback**.
 - **💾 Cloud-Based Storage** → Store patient engagement data on **AWS RDS or MongoDB Atlas**.
 
-## Contributing
-We welcome contributions! Feel free to submit **issues**, **feature requests**, or **pull requests** to enhance the project.
-
-## License
-📜 This project is licensed under the MIT License.
+```mermaid
+classDiagram
+    class SurveyData {
+        +int Age_Group
+        +str Gender
+        +bool Affected_By_Cancer
+        +float Q6_Satisfaction
+        +float Q5_Hours_Usage
+        +str Q14_Most_Valuable_Feature
+        +datetime Timestamp
+        +normalize_data()
+        +feature_engineer()
+    }
