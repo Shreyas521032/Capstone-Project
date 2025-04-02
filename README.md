@@ -36,19 +36,19 @@ We employed a **multi-faceted approach** integrating **machine learning, statist
 ---
 
 ## ⚙️ Key Features
-**Predictive Analytics ✅** - ML models provide insights into user engagement patterns, satisfaction levels, and feature preferences.
+✅**Predictive Analytics** - ML models provide insights into user engagement patterns, satisfaction levels, and feature preferences.
 
-**Dynamic Dashboards 📊** - **Power BI** integration enables real-time visualization of healthcare analytics.
+📊**Dynamic Dashboards** - **Power BI** integration enables real-time visualization of healthcare analytics.
 
-**Usability Optimization 🔍** - Navigation and UI/UX aspects analyzed to improve healthcare platform accessibility.
+🔍**Usability Optimization** - Navigation and UI/UX aspects analyzed to improve healthcare platform accessibility.
 
-**Patient-Centric Insights 🏥** - Data-driven decisions tailored to **enhance digital healthcare experiences**.
+🏥**Patient-Centric Insights** - Data-driven decisions tailored to **enhance digital healthcare experiences**.
 
-**Scalable & Cloud-Hosted ☁️** - **Deployed via Streamlit**, ensuring flexibility and scalability.
+☁️**Scalable & Cloud-Hosted** - **Deployed via Streamlit**, ensuring flexibility and scalability.
 
-**Multi-Device Responsiveness 📱** - Evaluated mobile and desktop experiences for optimal performance.
+📱**Multi-Device Responsiveness** - Evaluated mobile and desktop experiences for optimal performance.
 
-**Benchmark Dataset 📑** - Serves as a reference for **future healthcare projects** focusing on **patient engagement**.
+📑**Benchmark Dataset** - Serves as a reference for **future healthcare projects** focusing on **patient engagement**.
 
 ---
 
