@@ -6,7 +6,7 @@
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)](https://streamlit.io/)
 
 ## 🚀 Problem Statement
-In the rapidly evolving digital healthcare landscape, there is a pressing need to harness data-driven insights to enhance patient care, optimize platform usability, and improve overall healthcare outcomes. This project aims to build an **AI-powered Healthcare Data Analytics Platform** that analyzes patient interaction data to refine user experience, accessibility, and engagement. By leveraging machine learning models and advanced data visualization, this platform provides a **benchmark dataset** for future healthcare developers to design more user-centric solutions. 💡
+In the rapidly evolving digital healthcare landscape, there is a pressing need to harness data-driven insights to enhance patient care, optimize platform usability, and improve overall healthcare outcomes. This project aims to build an **AI-powered Healthcare Data Analytics Platform** that analyzes patient interaction data to refine user experience, accessibility, and engagement. By leveraging machine learning models and advanced data visualization, this platform provides a **benchmark dataset** for future healthcare developers to design more user-centric solutions.
 
 ---
 
@@ -36,19 +36,19 @@ We employed a **multi-faceted approach** integrating **machine learning, statist
 ---
 
 ## ⚙️ Key Features
-✅ **Predictive Analytics** - ML models provide insights into user engagement patterns, satisfaction levels, and feature preferences.
+**Predictive Analytics ✅** - ML models provide insights into user engagement patterns, satisfaction levels, and feature preferences.
 
-✅ **Dynamic Dashboards 📊** - **Power BI** integration enables real-time visualization of healthcare analytics.
+**Dynamic Dashboards 📊** - **Power BI** integration enables real-time visualization of healthcare analytics.
 
-✅ **Usability Optimization 🔍** - Navigation and UI/UX aspects analyzed to improve healthcare platform accessibility.
+**Usability Optimization 🔍** - Navigation and UI/UX aspects analyzed to improve healthcare platform accessibility.
 
-✅ **Patient-Centric Insights 🏥** - Data-driven decisions tailored to **enhance digital healthcare experiences**.
+**Patient-Centric Insights 🏥** - Data-driven decisions tailored to **enhance digital healthcare experiences**.
 
-✅ **Scalable & Cloud-Hosted ☁️** - **Deployed via Streamlit**, ensuring flexibility and scalability.
+**Scalable & Cloud-Hosted ☁️** - **Deployed via Streamlit**, ensuring flexibility and scalability.
 
-✅ **Multi-Device Responsiveness 📱** - Evaluated mobile and desktop experiences for optimal performance.
+**Multi-Device Responsiveness 📱** - Evaluated mobile and desktop experiences for optimal performance.
 
-✅ **Benchmark Dataset 📑** - Serves as a reference for **future healthcare projects** focusing on **patient engagement**.
+**Benchmark Dataset 📑** - Serves as a reference for **future healthcare projects** focusing on **patient engagement**.
 
 ---
 
