@@ -61,9 +61,10 @@ st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", u
 @st.cache_data
 def load_data():
     try:
-        # Option 1: Load from Excel
-        return pd.read_excel("Project/cancer_website_survey_dataset.xlsx")  # Update with your actual filename
-        
+        df1 = pd.read_excel("Project/cancer_website_survey_dataset.xlsx")  
+        df2 = pd.read_excel("Project/website_survey_feedback_responses.xlsx")
+        return pd.concat([df1, df2], ignore_index=True)        
+        # return pd.read_excel("Project/cancer_website_survey_dataset.xlsx")          
     except Exception as e:
         st.error(f"Error loading dataset: {str(e)}")
         st.stop()  # This will halt the app if data fails to load 
