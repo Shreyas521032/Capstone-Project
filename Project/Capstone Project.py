@@ -67,15 +67,6 @@ def load_data():
         st.stop()  # This will halt the app if data fails to load 
 data = load_data()
 
-@st.cache_data
-def load_data2():
-    try:       
-        return pd.read_excel("Datasets/website_survey_feedback_responses.xlsx")          
-    except Exception as e:
-        st.error(f"Error loading dataset: {str(e)}")
-        st.stop()  
-data2 = load_data2()
-
 # Sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", [
