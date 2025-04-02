@@ -1,10 +1,15 @@
 # Healthcare Data Analytics Platform
 
 ## Problem Statement
-In modern healthcare, **data-driven decision-making** is essential for improving patient outcomes, enhancing user engagement, and optimizing healthcare resources. Despite the growing adoption of digital health platforms, many organizations struggle to analyze **user behavior**, **feature adoption**, and **platform usability** effectively.
+In modern healthcare, **data-driven decision-making** is essential for improving patient outcomes, enhancing user engagement, and optimizing healthcare resources. Despite the growing adoption of digital health platforms, many organizations struggle to analyze **user behavior**, **feature adoption**, and **platform usability** effectively. This project bridges that gap by building a **Healthcare Data Analytics Platform** that not only **visualizes engagement trends** but also leverages **predictive modeling** to identify factors influencing user satisfaction, accessibility, and health-related interactions. The insights derived can serve as a **benchmark** for developing better healthcare technology solutions that cater to patient and caregiver needs.
 
-This project bridges that gap by building a **Healthcare Data Analytics Platform** that not only **visualizes engagement trends** but also leverages **predictive modeling** to identify factors influencing user satisfaction, accessibility, and health-related interactions. The insights derived can serve as a **benchmark** for developing better healthcare technology solutions that cater to patient and caregiver needs.
-
+flowchart LR
+    A[Raw CSV] --> B{Preprocessing}
+    B --> C[PowerBI Desktop]
+    B --> D[Streamlit Cloud]
+    C --> E[(PowerBI Service)]
+    D --> F[End Users]
+    
 ## Dataset
 We collaborated with the **Cancer Awareness and Rehabilitation Foundation (CARF NGO)** to obtain a dataset consisting of **200+ responses** from **cancer patients and their families**. The dataset was collected via surveys before and after the development of [CARF's website](https://carfngo.org/).
 
