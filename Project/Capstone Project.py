@@ -185,24 +185,24 @@ elif page == "📈 Linear Regression":
     # Define linear regression models
     linear_models = {
         "User Experience Analysis": {
-            "target": "Satisfaction",
-            "predictors": ["Hours per Week", "User-Friendliness", "Search Function Importance", "Load Time"]
+            "target": "Q6 Satisfaction",
+            "predictors": ["Q5 Hours per Week", "Q8 User-Friendliness", "Q11 Search Function Importance", "Q12 Load Time"]
         },
         "Navigation Efficiency": {
-            "target": "Clicks to Find Info",
-            "predictors": ["User-Friendliness", "Mobile Responsiveness", "Load Time"]
+            "target": "Q9 Clicks to Find Info",
+            "predictors": ["Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time"]
         },
         "Engagement Patterns": {
-            "target": "Hours per Week",
-            "predictors": ["Importance of Access", "User-Friendliness", "Satisfaction"]
+            "target": "Q5 Hours per Week",
+            "predictors": ["Q4 Importance of Access", "Q8 User-Friendliness", "Q6 Satisfaction"]
         },
         "Feature Importance": {
-            "target": "Importance of Access",
-            "predictors": ["Importance of Survivor Section", "Importance of Donation Feature", "Importance of Symptom Checker"]
+            "target": "Q4 Importance of Access",
+            "predictors": ["Q16 Importance of Survivor Section", "Q17 Importance of Donation Feature", "Q20 Importance of Symptom Checker"]
         },
         "Satisfaction Predictors": {
-            "target": "Satisfaction",
-            "predictors": ["Clicks to Find Info", "User-Friendliness", "QNavigation Style Preference"]
+            "target": "Q6 Satisfaction",
+            "predictors": ["Q9 Clicks to Find Info", "Q8 User-Friendliness", "Q23 Navigation Style Preference"]
         }
     }
     
@@ -292,19 +292,19 @@ elif page == "🔄 Logistic Regression":
     logistic_models = {
         "Cancer Impact Prediction": {
             "target": "Affected by Cancer",
-            "predictors": ["Hours per Week", "Importance of Symptom Checker", "Newsletter Subscription"]
+            "predictors": ["Q5 Hours per Week", "Q20 Importance of Symptom Checker", "Q18 Newsletter Subscription"]
         },
         "Newsletter Subscription": {
-            "target": "Newsletter Subscription",
-            "predictors": ["Satisfaction", "Importance of Survivor Section", "Importance of Symptom Checker"]
+            "target": "Q18 Newsletter Subscription",
+            "predictors": ["Q6 Satisfaction", "Q16 Importance of Survivor Section", "Q20 Importance of Symptom Checker"]
         },
         "Attendance at Events": {
-            "target": "Events Attending",
-            "predictors": ["Importance of Survivor Section", "Personalized Content Value", "Most Valuable Feature"]
+            "target": "Q19 Events Attending",
+            "predictors": ["Q16 Importance of Survivor Section", "Q21 Personalized Content Value", "Q14 Most Valuable Feature"]
         },
         "Symptom Checker Usage": {
-            "target": "Importance of Symptom Checker",
-            "predictors": ["Hours per Week", "User-Friendliness", "Satisfaction"]
+            "target": "Q20 Importance of Symptom Checker",
+            "predictors": ["Q5 Hours per Week", "Q8 User-Friendliness", "Q6 Satisfaction"]
         }
     }
     
@@ -410,20 +410,24 @@ elif page == "📉 Multiple Regression":
     # Define multiple regression models
     multiple_models = {
         "User Satisfaction": {
-            "target": "Satisfaction",
-            "predictors": ["Importance of Access", "User-Friendliness", "Mobile Responsiveness", "Load Time"]
+            "target": "Q6 Satisfaction",
+            "predictors": ["Q4 Importance of Access", "Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time"]
         },
         "Clicks to Find Information": {
-            "target": "Clicks to Find Info",
-            "predictors": ["User-Friendliness", "Mobile Responsiveness", "Load Time", "Importance of Consistent Design"]
+            "target": "Q9 Clicks to Find Info",
+            "predictors": ["Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time", "Q24 Importance of Consistent Design"]
+        },
+        "Engagement (Time Spent)": {
+            "target": "Q5 Hours per Week",
+            "predictors": ["Q14 Most Valuable Feature", "Q16 Importance of Survivor Section", "Q20 Importance of Symptom Checker"]
         },
         "Personalized Content Value": {
-            "target": "Personalized Content Value",
-            "predictors": ["User-Friendliness", "Satisfaction", "Importance of Access"]
+            "target": "Q21 Personalized Content Value",
+            "predictors": ["Q8 User-Friendliness", "Q6 Satisfaction", "Q4 Importance of Access"]
         },
         "Load Time Perception": {
-            "target": "Load Time",
-            "predictors": ["Hours per Week", "Mobile Responsiveness", "User-Friendliness"]
+            "target": "Q12 Load Time",
+            "predictors": ["Q5 Hours per Week", "Q10 Mobile Responsiveness", "Q8 User-Friendliness"]
         }
     }
     
