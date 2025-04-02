@@ -70,7 +70,7 @@ We employed a **multi-faceted approach** integrating **machine learning, statist
 ## 🚀 Deployment & Usage
 🔗 **Deployed Project:** [Live Streamlit App](https://capstone-project-deployed.streamlit.app/)
 
-📊 **Power BI Dashboard:** [Power BI Folder](#) *(Add Power BI report link here)*
+📊 **Power BI Dashboard:** [Power BI Folder](https://github.com/Shreyas521032/Capstone-Project/tree/main/Power%20BI)
 
 To run locally:
 ```bash
