@@ -20,7 +20,7 @@ This data serves as a valuable reference for healthcare organizations looking to
 ## 💡 Solution Approach
 We employed a **multi-faceted approach** integrating **machine learning, statistical analysis, and business intelligence** tools to derive meaningful insights from the dataset. Here's how we did it:
 
-🔹 **Data Preprocessing & Cleaning** - Handled missing values, normalized numerical data, and categorized qualitative responses.
+🔹 **Data Preprocessing & Cleaning 📡** - Handled missing values, normalized numerical data, and categorized qualitative responses.
 
 🔹 **Exploratory Data Analysis (EDA) 📊** - Identified key trends in user behavior, accessibility, and engagement levels.
 
