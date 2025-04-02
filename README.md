@@ -6,7 +6,7 @@
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)](https://streamlit.io/)
 
 ## 🚀 Problem Statement
-In the rapidly evolving digital healthcare landscape, there is a pressing need to harness data-driven insights to enhance patient care, optimize platform usability, and improve overall healthcare outcomes. This project aims to build an **AI-powered Healthcare Data Analytics Platform** that analyzes patient interaction data to refine user experience, accessibility, and engagement. By leveraging machine learning models and advanced data visualization, this platform provides a **benchmark dataset** for future healthcare developers to design more user-centric solutions.
+In modern healthcare, **data-driven decision-making** is essential for improving patient outcomes, enhancing user engagement, and optimizing healthcare resources. Despite the growing adoption of digital health platforms, many organizations struggle to analyze **user behavior**, **feature adoption**, and **platform usability** effectively. This project bridges that gap by building a **Healthcare Data Analytics Platform** that not only **visualizes engagement trends** but also leverages **predictive modeling** to identify factors influencing user satisfaction, accessibility, and health-related interactions. The insights derived can serve as a benchmark for developing better healthcare technology solutions that cater to patient and caregiver needs.
 
 ---
 
