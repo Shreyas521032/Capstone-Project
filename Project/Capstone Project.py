@@ -60,15 +60,21 @@ st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", u
 # Function to load data
 @st.cache_data
 def load_data():
-    try:
-        # df1 = pd.read_excel("Project/cancer_survey_dataset.xlsx")  
-        # df2 = pd.read_excel("Datasets/website_survey_feedback_responses.xlsx")
-        # return pd.concat([df1, df2], ignore_index=True)        
+    try:       
         return pd.read_excel("Project/cancer_survey_dataset.xlsx")          
     except Exception as e:
         st.error(f"Error loading dataset: {str(e)}")
         st.stop()  # This will halt the app if data fails to load 
 data = load_data()
+
+@st.cache_data
+def load_data2():
+    try:       
+        return pd.read_excel("Project/website_survey_feedback_responses.xlsx")          
+    except Exception as e:
+        st.error(f"Error loading dataset: {str(e)}")
+        st.stop()  
+data2 = load_data2()
 
 # Sidebar for navigation
 st.sidebar.title("Navigation")
