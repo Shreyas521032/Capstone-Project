@@ -72,16 +72,21 @@ We employed a **multi-faceted approach** integrating **machine learning, statist
 
 📊 **Power BI Dashboard:** [Power BI Folder](https://github.com/Shreyas521032/Capstone-Project/tree/main/Power%20BI)
 
-To run locally:
+## Setup & Installation
+
+### 1. Clone the Repository
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/healthcare-analytics.git
 cd healthcare-analytics
+```
 
-# Install dependencies
+## Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-# Run Streamlit App
+## Run Streamlit App
+```bash
 streamlit run app.py
 ```
 
