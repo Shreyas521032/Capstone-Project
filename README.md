@@ -5,6 +5,11 @@
 [![Scikit-Learn](https://img.shields.io/badge/ML-scikit--learn-orange)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)](https://streamlit.io/)
 
+## 🚀 Deployment & Usage
+🔗 **Deployed Project:** [Live Streamlit App](https://capstone-project-deployed.streamlit.app/)
+
+📊 **Power BI Dashboard:** [Power BI Folder](https://github.com/Shreyas521032/Capstone-Project/tree/main/Power%20BI)
+
 ## 🚀 Problem Statement
 In modern healthcare, **data-driven decision-making** is essential for improving patient outcomes, enhancing user engagement, and optimizing healthcare resources. Despite the growing adoption of digital health platforms, many organizations struggle to analyze **user behavior**, **feature adoption**, and **platform usability** effectively. This project bridges that gap by building a **Healthcare Data Analytics Platform** that not only **visualizes engagement trends** but also leverages **predictive modeling** to identify factors influencing user satisfaction, accessibility, and health-related interactions. The insights derived can serve as a benchmark for developing better healthcare technology solutions that cater to patient and caregiver needs.
 
@@ -66,11 +71,6 @@ We employed a **multi-faceted approach** integrating **machine learning, statist
 📈 **Machine Learning** - Regression models for predictive analytics
 
 ---
-
-## 🚀 Deployment & Usage
-🔗 **Deployed Project:** [Live Streamlit App](https://capstone-project-deployed.streamlit.app/)
-
-📊 **Power BI Dashboard:** [Power BI Folder](https://github.com/Shreyas521032/Capstone-Project/tree/main/Power%20BI)
 
 ## Setup & Installation
 
