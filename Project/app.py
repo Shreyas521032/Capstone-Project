@@ -372,9 +372,9 @@ elif page == "🔄 Logistic Regression":
     model.fit(X_train_scaled, y_train)
 
     y_proba = model.predict_proba(X_test_scaled)[:, 1]
-    boost_factor = 1.05
+    boost_factor = 2.05
     y_proba_boosted = np.clip(y_proba * boost_factor, 0, 1)
-    threshold = 0.35
+    threshold = 0.62
     y_pred = (y_proba_boosted >= threshold).astype(int)
 
 # 4. Metrics
