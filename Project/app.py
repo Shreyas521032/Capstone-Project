@@ -374,6 +374,7 @@ elif page == "🔄 Logistic Regression":
     precision = report[positive_class]['precision']
     recall = report[positive_class]['recall']
     f1 = f1_score(y_test, y_pred, average='binary') if set(y_test) == {0, 1} else f1_score(y_test, y_pred, average='weighted')
+    
     # Display metrics
     col1, col2, col3, col4 = st.columns(4)
     with col1:
