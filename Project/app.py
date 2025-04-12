@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error, accuracy_score, classification_report, f1_score, mean_absolute_error
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScalera
 
 # Set page configuration
 st.set_page_config(
@@ -368,14 +368,14 @@ elif page == "🔄 Logistic Regression":
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
-# 2. Model with class weights
     model = LogisticRegression(class_weight='balanced', max_iter=1000)
     model.fit(X_train_scaled, y_train)
 
-# 3. Predict with custom threshold
     y_proba = model.predict_proba(X_test_scaled)[:, 1]
-    threshold = 0.4
-    y_pred = (y_proba >= threshold).astype(int)
+    boost_factor = 1.05
+    y_proba_boosted = np.clip(y_proba * boost_factor, 0, 1)
+    threshold = 0.45
+    y_pred = (y_proba_boosted >= threshold).astype(int)
 
 # 4. Metrics
     accuracy = accuracy_score(y_test, y_pred)
