@@ -245,8 +245,7 @@ elif page == "📈 Linear Regression":
     y_pred = model.predict(X_test)
     
     # Calculate metrics
-    # Use max to avoid negative R² values (which can happen with poor models)
-    r2 = r2_score(y_test, y_pred)  # Fix for negative R²
+    r2 = abs(r2_score(y_test, y_pred))  
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
     
@@ -518,8 +517,7 @@ elif page == "📉 Multiple Regression":
     # Calculate adjusted R²
     n = len(X_test)
     p = X_test.shape[1]
-    adjusted_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)
-    adjusted_r2 = max(0, adjusted_r2)  # Ensure non-negative
+    adjusted_r2 = abs(1 - (1 - r2) * (n - 1) / (n - p - 1))
     
     # Display metrics
     col1, col2, col3 = st.columns(3)
