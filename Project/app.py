@@ -441,7 +441,7 @@ elif page == "🔄 Logistic Regression":
         
         # Calculate ROC curve
         from sklearn.metrics import roc_curve, auc
-        fpr, tpr, _ = roc_curve(y_test, y_prob)
+        fpr, tpr, _ = roc_curve(y_test, y_proba)
         roc_auc = auc(fpr, tpr)
         
         fig = go.Figure()
