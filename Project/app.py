@@ -320,10 +320,6 @@ elif page == "🔄 Logistic Regression":
         "Attendance at Events": {
             "target": "Q19 Events Attending",
             "predictors": ["Q16 Importance of Survivor Section", "Q21 Personalized Content Value", "Q14 Most Valuable Feature"]
-        },
-        "Symptom Checker Usage": {
-            "target": "Q20 Importance of Symptom Checker",
-            "predictors": ["Q5 Hours per Week", "Q8 User-Friendliness", "Q6 Satisfaction"]
         }
     }
     
