@@ -374,7 +374,7 @@ elif page == "🔄 Logistic Regression":
     y_proba = model.predict_proba(X_test_scaled)[:, 1]
     boost_factor = 1.25
     y_proba_boosted = np.clip(y_proba * boost_factor, 0, 1)
-    threshold = 0.55
+    threshold = 0.50
     y_pred = (y_proba_boosted >= threshold).astype(int)
 
 # 4. Metrics
@@ -383,7 +383,7 @@ elif page == "🔄 Logistic Regression":
     report = classification_report(y_test, y_pred, output_dict=True)
 
 # Streamlit display
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns(3)
     with col1:
         st.metric("F1-Score", f"{f1:.3f}")
     with col2:
