@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error, accuracy_score, classification_report, f1_score, mean_absolute_error
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.preprocessing import StandardScalera
+from sklearn.preprocessing import StandardScaler
 
 # Set page configuration
 st.set_page_config(
