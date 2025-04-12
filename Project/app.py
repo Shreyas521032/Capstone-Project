@@ -362,29 +362,60 @@ elif page == "🔄 Logistic Regression":
     # Train model
     model = LogisticRegression(max_iter=1000)
     model.fit(X_train, y_train)
-    
-    # Predictions
-    y_pred = model.predict(X_test)
-    y_prob = model.predict_proba(X_test)[:, 1]
-    
-    # Metrics
+
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+# 2. Model with class weights
+    model = LogisticRegression(class_weight='balanced', max_iter=1000)
+    model.fit(X_train_scaled, y_train)
+
+# 3. Predict with custom threshold
+    y_proba = model.predict_proba(X_test_scaled)[:, 1]
+    threshold = 0.4
+    y_pred = (y_proba >= threshold).astype(int)
+
+# 4. Metrics
     accuracy = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
     report = classification_report(y_test, y_pred, output_dict=True)
-    positive_class = '1' if '1' in report else list(report.keys())[-2]
-    precision = report[positive_class]['precision']
-    recall = report[positive_class]['recall']
-    f1 = f1_score(y_test, y_pred, average='binary') if set(y_test) == {0, 1} else f1_score(y_test, y_pred, average='weighted')
-    
-    # Display metrics
+
+# Streamlit display
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("Accuracy", f"{accuracy:.3f}")
     with col2:
-        st.metric("Precision", f"{precision:.3f}")
+        st.metric("Precision", f"{report['1']['precision']:.3f}")
     with col3:
-        st.metric("Recall (Sensitivity)", f"{recall:.3f}")
+        st.metric("Recall (Sensitivity)", f"{report['1']['recall']:.3f}")
     with col4:
         st.metric("F1-Score", f"{f1:.3f}")
+
+
+    
+    # Predictions
+    # y_pred = model.predict(X_test)
+    # y_prob = model.predict_proba(X_test)[:, 1]
+    
+    # # Metrics
+    # accuracy = accuracy_score(y_test, y_pred)
+    # report = classification_report(y_test, y_pred, output_dict=True)
+    # positive_class = '1' if '1' in report else list(report.keys())[-2]
+    # precision = report[positive_class]['precision']
+    # recall = report[positive_class]['recall']
+    # f1 = f1_score(y_test, y_pred, average='binary') if set(y_test) == {0, 1} else f1_score(y_test, y_pred, average='weighted')
+    
+    # # Display metrics
+    # col1, col2, col3, col4 = st.columns(4)
+    # with col1:
+    #     st.metric("Accuracy", f"{accuracy:.3f}")
+    # with col2:
+    #     st.metric("Precision", f"{precision:.3f}")
+    # with col3:
+    #     st.metric("Recall (Sensitivity)", f"{recall:.3f}")
+    # with col4:
+    #     st.metric("F1-Score", f"{f1:.3f}")
     
     # Feature importance
     coef_df = pd.DataFrame({
