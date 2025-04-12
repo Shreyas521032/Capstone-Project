@@ -370,16 +370,18 @@ elif page == "🔄 Logistic Regression":
     # Metrics
     accuracy = accuracy_score(y_test, y_pred)
     report = classification_report(y_test, y_pred, output_dict=True)
-    f1 = f1_score(y_test, y_pred, average='binary')
+    positive_class = '1' if '1' in report else list(report.keys())[-2]
+    precision = report[positive_class]['precision']
+    recall = report[positive_class]['recall']
     
     # Display metrics
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("Accuracy", f"{accuracy:.3f}")
     with col2:
-        st.metric("Precision", f"{report['1']['precision']:.3f}")
+        st.metric("Precision", f"{precision:.3f}")
     with col3:
-        st.metric("Recall (Sensitivity)", f"{report['1']['recall']:.3f}")
+        st.metric("Recall (Sensitivity)", f"{recall:.3f}")
     with col4:
         st.metric("F1-Score", f"{f1:.3f}")
     
