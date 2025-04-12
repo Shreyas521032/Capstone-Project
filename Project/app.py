@@ -287,7 +287,7 @@ elif page == "📈 Linear Regression":
     
     # Calculate metrics
     # Use max to avoid negative R² values (which can happen with poor models)
-    r2 = max(0, r2_score(y_test, y_pred))  # Fix for negative R²
+    r2 = r2_score(y_test, y_pred)  # Fix for negative R²
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
     
