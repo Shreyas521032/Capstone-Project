@@ -11,7 +11,7 @@ In modern healthcare, **data-driven decision-making** is essential for improving
 ## 🚀 Deployment & Usage
 
 
-🔗 **Deployed Project:** [Live Streamlit App](https://capstone-project-deployed.streamlit.app/)
+🔗 **Deployed Project:** [Live Streamlit App](https://capstone-project-deploy-srs.streamlit.app/)
 
 📊 **Power BI Dashboard:** [Power BI Folder](https://github.com/Shreyas521032/Capstone-Project/tree/main/Power%20BI)
 
