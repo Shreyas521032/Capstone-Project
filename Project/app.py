@@ -68,47 +68,6 @@ def load_data():
         sample_data = create_sample_data()
         return sample_data
 
-# Function to create sample data if file not found (for testing purposes)
-def create_sample_data():
-    np.random.seed(42)
-    n_samples = 100
-    
-    # Create sample data
-    data = pd.DataFrame({
-        'Age Group': np.random.choice(['18-25', '26-35', '36-45', '46-55', '56+'], n_samples),
-        'Gender': np.random.choice(['Male', 'Female', 'Other'], n_samples),
-        'Affected by Cancer': np.random.choice([0, 1], n_samples),
-        'Q4 Importance of Access': np.random.randint(1, 11, n_samples),
-        'Q5 Hours per Week': np.random.uniform(0.5, 10, n_samples),
-        'Q6 Satisfaction': np.random.randint(1, 11, n_samples),
-        'Q8 User-Friendliness': np.random.randint(1, 11, n_samples),
-        'Q9 Clicks to Find Info': np.random.randint(1, 20, n_samples),
-        'Q10 Mobile Responsiveness': np.random.randint(1, 11, n_samples),
-        'Q11 Search Function Importance': np.random.randint(1, 11, n_samples),
-        'Q12 Load Time': np.random.randint(1, 11, n_samples),
-        'Q14 Most Valuable Feature': np.random.choice(['Information', 'Support', 'Tools', 'Resources'], n_samples),
-        'Q15 Multilingual Importance': np.random.randint(1, 11, n_samples),
-        'Q16 Importance of Survivor Section': np.random.randint(1, 11, n_samples),
-        'Q17 Importance of Donation Feature': np.random.randint(1, 11, n_samples),
-        'Q18 Newsletter Subscription': np.random.choice([0, 1], n_samples),
-        'Q19 Events Attending': np.random.choice([0, 1], n_samples),
-        'Q20 Importance of Symptom Checker': np.random.randint(1, 11, n_samples),
-        'Q21 Personalized Content Value': np.random.randint(1, 11, n_samples),
-        'Q22 Importance of Clinical Trials': np.random.randint(1, 11, n_samples),
-        'Q23 Navigation Style Preference': np.random.randint(1, 6, n_samples),
-        'Q24 Importance of Consistent Design': np.random.randint(1, 11, n_samples)
-    })
-    
-    # Add some correlation to make the data more realistic
-    data['Q6 Satisfaction'] = (data['Q8 User-Friendliness'] * 0.6 + 
-                              data['Q12 Load Time'] * 0.2 + 
-                              np.random.normal(0, 1, n_samples)).astype(int)
-    
-    # Ensure values are within range
-    data['Q6 Satisfaction'] = data['Q6 Satisfaction'].clip(1, 10)
-    
-    return data
-
 # Load the data
 data = load_data()
 
