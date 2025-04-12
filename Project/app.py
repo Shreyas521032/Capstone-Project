@@ -192,10 +192,6 @@ elif page == "📈 Linear Regression":
             "target": "Q6 Satisfaction",
             "predictors": ["Q5 Hours per Week", "Q8 User-Friendliness", "Q11 Search Function Importance", "Q12 Load Time"]
         },
-        "Navigation Efficiency": {
-            "target": "Q9 Clicks to Find Info",
-            "predictors": ["Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time"]
-        },
         "Engagement Patterns": {
             "target": "Q5 Hours per Week",
             "predictors": ["Q4 Importance of Access", "Q8 User-Friendliness", "Q6 Satisfaction"]
@@ -457,10 +453,6 @@ elif page == "📉 Multiple Regression":
         "User Satisfaction": {
             "target": "Q6 Satisfaction",
             "predictors": ["Q4 Importance of Access", "Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time"]
-        },
-        "Clicks to Find Information": {
-            "target": "Q9 Clicks to Find Info",
-            "predictors": ["Q8 User-Friendliness", "Q10 Mobile Responsiveness", "Q12 Load Time", "Q24 Importance of Consistent Design"]
         },
         "Engagement (Time Spent)": {
             "target": "Q5 Hours per Week",
