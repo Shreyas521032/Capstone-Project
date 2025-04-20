@@ -62,7 +62,7 @@ st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", u
 @st.cache_data
 def load_data():
     try:       
-        return pd.read_excel("Project/cancer_survey_dataset.xlsx")          
+        return pd.read_excel("Project/cancer_survey_dataset (1).xlsx")          
     except Exception as e:
         st.error(f"Error loading dataset: {str(e)}")
         # Create sample data for testing if file not found
