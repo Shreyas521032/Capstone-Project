@@ -58,6 +58,7 @@ st.markdown("""
 # Application title
 st.markdown("<h1 class='main-header'>Healthcare Data Analytics Platform</h1>", unsafe_allow_html=True)
 
+
 # Function to load data
 @st.cache_data
 def load_data():
